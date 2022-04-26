@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logotab.png" type="image/png" sizes="16x16">
+    <title>Cek NIM Mahasiswa UIN SUSKA RIAU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+
+<body class="bg-cover bg-[url(img/bg1.png)] overflow-hidden ">
+
+    <div id="section1" class="flex px-1">
+        <!-- input -->
+        <div id="input" class="flex items-center justify-center min-h-[300px] w-screen mt-[130px] mx-7">
+
+            <div class=" border bg-white  rounded-xl p-10 ">
+                <div class="flex justify-center ">
+                    <img class="h-20 items-center" src="./img/logoUIN.png" alt="logoUINSUSKARIAU">
+                </div>
+                <h3 class="mt-2 text-center font-bold ">CEK NIM MAHASISWA</h3>
+                <div class="m-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-1" for="NIM">
+                        Masukan NIM
+                    </label>
+                    <input class="border border-gray-600 rounded-2xl py-2 px-4  w-full" id="NIM" type="text" placeholder="NIM">
+                    <a id="btncek" href="#output"><button class="bg-green-500 w-full py-2 px-4 mt-3 hover:bg-green-400 rounded font-bold text-white " onclick="cek()" type="submit" >Cek</button></a>
+
+                </div>
+                <p class="text-[8px] text-center text-gray-600">UTS Pemorgraman Web - Ibnu Sahid - 12050110489 - TIF 20 G</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="section2" class="flex px-1">
+        <!-- output -->
+        <div id="output" class="flex item-center justify-center min-h-[300px]  w-screen mt-[450px] mb-[200px] mx-7">
+            <div id="invis" class="invisible box-content h-[80] w-border bg-white  rounded-xl p-10 ">
+                <h3 class="my-2 text-center font-bold ">DATA MAHASISWA</h3>
+                <table class="table-auto">
+                    <tbody>
+                        <!-- jenjang -->
+                        <tr>
+                            <td>Jenjang Pendidikan </td>
+                            <td id="displayJP"></td>
+                        </tr>
+                        <!-- angkatan -->
+                        <tr>
+                            <td>Angkatan</td>
+                            <td id="displayAKT"></td>
+                        </tr>
+                        <!-- fakultas -->
+                        <tr>
+                            <td>Fakultas</td>
+                            <td id="displayFakultas"></td>
+                        </tr>
+                        <!-- jurusan -->
+                        <tr>
+                            <td>Jurusan</td>
+                            <td id="displayJurusan"></td>
+                        </tr>
+                        <!-- gender -->
+                        <tr>
+                            <td>Gender</td>
+                            <td id="displayGender"></td>
+                        </tr>
+                        <!-- nomor mahasiswa -->
+                        <tr>
+                            <td>Nomor mahasiswa</td>
+                            <td id="displayNmrMahasiswa"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <a id="btnback" href="#section1"><button class="bg-green-500 w-full py-2 px-4 mt-3 hover:bg-green-400 rounded font-bold text-white " onclick="back()" type="submit">Kembali</button></a>
+                <p class="text-[8px] text-center text-gray-600 mt-3">UTS Pemorgraman Web - Ibnu Sahid - 12050110489 - TIF 20 G</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
